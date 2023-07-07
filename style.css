@@ -8,26 +8,22 @@ body {
 #contenedor {
   display: flex;
 }
-
+/* TODO VA BIEN EN LA OPCION DE INSTECCIONAR LA WEB NO ENTIENDO PORQUE AL DARLE A UN LINK DE LOS DE ABAJO DE LA TARJETA TODO DECIDE PONERSE BIEN :( */
 @media only screen and (max-width: 768px) {
-  #contenedor {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+  body {
+    display: block;
   }
 
-  .contPrincipal {
-    flex-grow: 1;
+  #contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 
 @media only screen and (max-width: 375px) {
   body {
     display: block;
-    align-items: center;
-    justify-content: center;
   }
 
   #contenedor {
